@@ -33,12 +33,10 @@ public class LexicalErrorDetection_10 {
 
                 if(ob.unclosedString(line) == false){
                     System.out.println("Unclosed String Literal at Line : "+lineCount);
-                    // return;
                 }
 
                 if(ob.incorrectIdentifier(line) == false){
                     System.out.println("Incorrect identifier at Line : "+lineCount);
-                    // return;
                 }
                 
             }
@@ -81,3 +79,4 @@ public class LexicalErrorDetection_10 {
         return true;
     }
 }
+
