@@ -23,7 +23,7 @@ public class LinesTokensComments_8 {
 
                 if(line.startsWith("//")){
                     commentCount ++;
-                    tokenCount -= line.length();
+                    tokenCount -= line.split(" ").length;
                     continue;
                 }
                 else if(line.startsWith("/*")){
