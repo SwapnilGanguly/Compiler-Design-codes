@@ -15,7 +15,6 @@ public class LinesTokensComments_8 {
                 lineCount ++;
 
                 if(multiLineComment == true){
-                    commentCount ++;
                     if(line.contains("*/"))
                         multiLineComment = false;
                     continue;
@@ -27,6 +26,7 @@ public class LinesTokensComments_8 {
                     continue;
                 }
                 else if(line.startsWith("/*")){
+                    commentCount ++;
                     multiLineComment = true;
                     tokenCount -= line.split(" ").length;
                     continue;
