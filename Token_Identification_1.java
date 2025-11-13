@@ -86,9 +86,9 @@ public class Token_Identification_1 {
         for(int i=0; i<s.length(); i++){
             if(Character.isDigit(s.charAt(i)) == false){
                 return false;
+            }
             else if(s.charAt(i) == '.')
                 count ++;
-            }
         }
         if(count > 1)
             return false;
@@ -102,4 +102,5 @@ public class Token_Identification_1 {
         return true;
     }
 }
+
 
